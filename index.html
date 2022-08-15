@@ -20,8 +20,8 @@
             var audio = new Audio("sound/wrong.mp3");
             audio.play();
         }
-        const applause = () => {
-            var audio = new Audio("sound/applause.mp3");
+        const airhorn = () => {
+            var audio = new Audio("sound/airhorn.mp3");
             audio.play();
         }
         const yeey = () => {
@@ -34,7 +34,7 @@
     <div class="p-2 grid grid-flow-row-dense grid-cols-2 gap-4 h-screen">
         <button type="button" class="p-8 w-full h-full rounded-lg bg-green-700" onclick="correct()"><i class="fa fa-check text-white text-7xl md:text-9xl"></i></button>
         <button type="button" class="p-8 w-full h-full rounded-lg bg-red-700" onclick="wrong()"><i class="fa fa-times text-white text-7xl md:text-9xl"></i></button>
-        <button type="button" class="p-8 w-full h-full rounded-lg bg-orange-500" onclick="applause()"><i class="fa fa-hands-clapping text-white text-7xl md:text-9xl"></i></button>
+        <button type="button" class="p-8 w-full h-full rounded-lg bg-orange-500" onclick="airhorn()"><i class="fa fa-bullhorn text-white text-7xl md:text-9xl"></i></button>
         <button type="button" class="p-8 w-full h-full rounded-lg bg-yellow-500" onclick="yeey()"><i class="fa fa-people-robbery text-white text-7xl md:text-9xl"></i></button>
     </div>
 </body>
