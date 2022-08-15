@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Effect 17an</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const correct = () => {
+            var audio = new Audio("sound/correct.mp3");
+            audio.play();
+        }
+        const wrong = () => {
+            var audio = new Audio("sound/wrong.mp3");
+            audio.play();
+        }
+        const applause = () => {
+            var audio = new Audio("sound/applause.mp3");
+            audio.play();
+        }
+        const yeey = () => {
+            var audio = new Audio("sound/yeey.mp3");
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <div class="p-8 grid grid-flow-row-dense grid-cols-2 gap-8 h-screen">
+        <button type="button" class="p-8 w-full h-full rounded-lg bg-green-700" onclick="correct()"><i class="fa fa-check text-white text-7xl md:text-9xl"></i></button>
+        <button type="button" class="p-8 w-full h-full rounded-lg bg-red-700" onclick="wrong()"><i class="fa fa-times text-white text-7xl md:text-9xl"></i></button>
+        <button type="button" class="p-8 w-full h-full rounded-lg bg-orange-500" onclick="applause()"><i class="fa fa-hands-clapping text-white text-7xl md:text-9xl"></i></button>
+        <button type="button" class="p-8 w-full h-full rounded-lg bg-yellow-500" onclick="yeey()"><i class="fa fa-people-robbery text-white text-7xl md:text-9xl"></i></button>
+    </div>
+</body>
+</html>
