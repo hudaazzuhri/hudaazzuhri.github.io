@@ -4,7 +4,7 @@
 include 'phpqrcode/qrlib.php';
 
 //data to be stored in qr
-$text = "PRODUCT ID 23456";
+$text = "https://hudaazzuhri.github.io";
   
 //file path
 $file = "images/qr1.png";
